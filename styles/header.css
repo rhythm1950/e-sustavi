@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+
+}
+
+/* styles.css */
+:root {
+    --bg-about-gradient: linear-gradient(90deg,
+            #f7e5f7 0%,
+            #e8e0f4 20%,
+            #fff 50%,
+            #e8e0f4 80%,
+            #f7e5f7 100%);
+    --bg-about-grid-line: #e3d4ef33;
+    --bg-business-gradient: linear-gradient(to right, #f8eafd, #f2f1ff);
+    --bg-form: #f1f1f8;
+    --bg-icon: #f5e9f7;
+    --bg-video-card: #222;
+    --bg-purple: #a04d8c;
+    --bg-button: #a23baa;
+    --bg-button-hover: #8e3296;
+    --bg-btn-gradient: linear-gradient(90deg, #B13BA3 0%, #c772c0 100%);
+    --bg-btn-gradient-hover: linear-gradient(90deg, #c772c0 0%, #B13BA3 100%);
+
+    --text-primary: #111;
+    --text-secondary: #333;
+    --text-muted: #5d5d6d;
+    --text-light-muted: #606060;
+    --text-accent: #B13BA3;
+    --text-icon: #a23baa;
+    --text-placeholder: #888;
+    --text-white: #fff;
+
+    --font-main: "Lato", sans-serif;
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+    /* color: #000; */
+    /* background: linear-gradient(to right, #f8eafd, #f2f1ff); */
+    /* overflow: hidden; */
+    font-family: var(--font-main);
+    color: var(--text-primary);
+    background: var(--bg-about-gradient);
+
+}
+
+/* Navbar */
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.2rem;
+    height: 70px;
+
+    background: #ffffff;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-logo {
+    height: 40px;
+    width: 140px;
+}
+
+.navbar-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu ul li {
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.navbar-menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+/* Style for nav link container (li) when active */
+.navbar-menu ul li.active::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    /* slightly below the text */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: #B13BA3;
+    /* pink dot */
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.navbar-menu ul li:hover a {
+    color: #2e0e96;
+}
+
+/* Active link: text stays pink */
+.navbar-menu ul li.active a {
+    color: #000;
+    font-weight: 700;
+}
+
+
+.navbar-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.navbar-actions .btn-1 {
+    padding: 6px 16px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-actions .fa-headset {
+    font-size: 16px;
+}
+
+.navbar-actions .btn-2 {
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+}
+
+/* Dropdown */
+/* Fix positioning and overflow */
+.main-navbar ul li.has-sub {
+    position: relative;
+}
+
+/* Dropdown submenu container */
+.main-navbar ul li.has-sub>ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 6px 6px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 0;
+    padding-top: 4px;
+    /* border-top: 2px solid var(--bg-button); */
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1100;
+
+    margin-top: 0;
+}
+
+/* Keep dropdown visible when hovering li or ul */
+.main-navbar ul li.has-sub:hover>ul,
+.main-navbar ul li.has-sub>ul:hover {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+/* Dropdown list items */
+.main-navbar ul li.has-sub>ul li {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-navbar ul li.has-sub>ul li:last-child {
+    border-bottom: none;
+}
+
+
+
+/* Dropdown links */
+.main-navbar ul li.has-sub>ul li a {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+/* Hover effect */
+.main-navbar ul li.has-sub>ul li a:hover {
+    background-color: var(--bg-button-hover);
+    color: var(--text-white);
+}

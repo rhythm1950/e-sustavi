@@ -1,0 +1,151 @@
+.footer-section {
+    background-color: #f1f1f8;
+    padding: 40px 20px 20px;
+    color: #333;
+
+
+}
+
+.footer-container {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-left p {
+    padding-top: 10px;
+}
+
+.footer-brand {
+    /* display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px; */
+}
+
+.footer-brand img {
+    width: 170px;
+    height: 50px;
+}
+
+.footer-brand h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.first-ch {
+    color: #a23baa;
+}
+
+.second-ch {
+    color: #1b8084;
+}
+
+.company-name {
+    margin: 10px 0;
+    font-weight: 600;
+    color: #000;
+    font-size: 12px;
+}
+
+.footer-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-width: 300px;
+}
+
+.footer-columns {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-column p {
+    margin: 12px 0;
+    font-size: 14px;
+    color: #444;
+}
+
+
+
+.footer-membership h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.membership-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.membership-logos img {
+    height: 25px;
+    width: 80px;
+    object-fit: contain;
+}
+
+/* Bottom Section */
+.footer-bottom {
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-certifications img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    font-size: 14px;
+    color: #666;
+}

@@ -1,0 +1,175 @@
+.business-solution-section {
+    background: linear-gradient(to right, #f8eafd, #f2f1ff);
+    font-family: "Lato", sans-serif;
+}
+
+.business-container {
+    max-width: 84%;
+    margin: 0 auto;
+    padding: 60px 0;
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+}
+
+.business-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.business-left {
+    width: 60%;
+}
+
+.business-left img {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.business-right {
+    width: 40%;
+}
+
+.business-left h1 {
+    margin-bottom: 8px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+
+.business-desc {
+    color: #606060;
+    margin-bottom: 20px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.business-checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.business-check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 1em;
+}
+
+.business-checkbox {
+    width: 18px;
+    height: 18px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    background: #a04d8c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+.business-checkbox svg {
+    width: 12px;
+    height: 12px;
+    display: block;
+}
+
+.business-media-section {
+    margin: 36px auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.business-media-card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/7.5;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #222;
+}
+
+.business-media-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+}
+
+.business-play-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: #a04d8c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.business-play-btn svg {
+    width: 32px;
+    height: 32px;
+    fill: #fff;
+    margin-left: 3px;
+}
+
+.business-btn-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.business-main-btn {
+    background: #a04d8c;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 13px 34px;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.business-main-btn svg {
+    width: 15px;
+    height: 15px;
+    fill: #fff;
+}
+
+@media (max-width: 900px) {
+    .business-row {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .business-media-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .business-container {
+        padding: 18px 3vw 10px 3vw;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+}
