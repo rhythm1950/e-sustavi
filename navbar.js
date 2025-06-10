@@ -12,6 +12,7 @@ const currentPath = window.location.pathname.split("/").pop();
 navItems.forEach(item => {
     const anchor = item.querySelector("a");
     if (anchor && anchor.getAttribute("href") === currentPath) {
+        console.log(currentPath);
         item.classList.add("active");
     }
 });
