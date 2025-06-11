@@ -33,74 +33,128 @@
     </div>
     <!--  Preloader end  -->
     <!-- header -->
-    <header class="main-navbar">
-      <div class="navbar-logo">
-        <a href="index.html">
-          <img src="./assets/e-sustavi-logo 1.png" alt="e-sustavi logo" />
-        </a>
-      </div>
-      <nav class="navbar-menu">
-        <ul>
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <!-- <li><a href="#" class="nav-link">Solutions <i class="fas fa-angle-down"></i></a></li> -->
-          <li class="has-sub">
-            <a href="#">Solutions <i class="fas fa-angle-down"></i></a>
-            <ul class="sub-menu">
-              <li>
-                <a href="projects-detail.html">Digitalize your business</a>
-              </li>
-              <li>
-                <a href="projects-detail.html">Luceed business solution</a>
-              </li>
-              <li><a href="projects-detail.html">Odoo business solution</a></li>
-            </ul>
-          </li>
+    <header class="header-area header">
+      <div class="header-top second-header d-none d-md-block">
+        <div class="container-fluid pl-80 pr-80">
+           <div class="row align-items-center">  
+               <div class="col-lg-4 col-md-3 d-none d-md-block">
+                   <div class="header-social">
+                       <span>                                                                      
+                           <a href="#"><i class="fab fa-facebook-f"></i></a>
+                           <a href="#"><i class="fab fa-instagram"></i></a>
+                           <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                           <a href="#"><i class="fab fa-youtube"></i></a>
+                           <a href="#"><i class="fab fa-linkedin"></i></a>
+                       </span>                    
+                          <!--  /social media icon redux -->                               
+                   </div>
+               </div>
+                <div class="col-lg-8 col-md-9 d-none d-md-block text-right">
+                    <div class="header-cta">
+                       <ul>
+                          <li>
+                             <div class="call-box">
+                                <div class="icon">
+                                   <i class="fa-regular fa-phone"></i>
+                                </div>
+                                <div class="text">                                            
+                                   <strong><a href="tel:+917052101786">+91 7052 101 786</a></strong>                                              
+                                </div>
+                             </div>
+                          </li>
+                          <li>
+                             <div class="call-box">
+                                <div class="icon">
+                                  <i class="fa-regular fa-envelope"></i>
+                                </div>
+                                <div class="text">                                            
+                                   <strong><a href="mailto:info@example.com"> info@example.com  </a></strong>                                               
+                                </div>
+                             </div>
+                          </li>  
+                       </ul>
+                    </div> 
+               </div>
+           </div>
+       </div>
+   </div>	
+      <div id="header-sticky" class="menu-area w-100">
+        <div class="container-fluid">
+          <div class="second-menu" id="menu-bar">
+            <div class="d-flex row justify-content-evenly align-items-center">
+              <!-- logo -->
 
-          <li class="has-sub">
-            <a href="#" class="nav-link"
-              >Services<i class="fas fa-angle-down"></i
-            ></a>
-            <ul class="sub-menu">
-              <li>
-                <a href="projects-detail.html"
-                  >Creation of websites and webshops</a
+              <div
+                class="col-xl-2 col-lg-2 d-flex justify-content-center align-items-center"
+              >
+                <div
+                  class="logo p-3 d-flex align-items-center justify-content-center"
                 >
-              </li>
-              <li>
-                <a href="projects-detail.html"
-                  >Web hosting and domain registration</a
+                  <a href="index.html"
+                    ><img src="img/logo/logo.png" alt="logo"
+                  /></a>
+                </div>
+              </div>
+
+              <!-- menu -->
+              <div class="col-xl-6 col-lg-6 responsive-m">
+                <div
+                  class="main-menu align-items-center d-flex justify-content-center"
                 >
-              </li>
-              <li>
-                <a href="projects-detail.html"
-                  >Sales of cash registers, fiscal programs and POS printers</a
-                >
-              </li>
-              <li>
-                <a href="projects-detail.html"
-                  >Service and maintenance of computers and IT equipment</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li><a href="blog.html" class="nav-link">News</a></li>
-          <li><a href="pricing.html" class="nav-link">Reference</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-        </ul>
-      </nav>
-      <div class="navbar-actions">
-        <button class="btn-1 btn-outline">
-          <i class="fas fa-headset"></i> <span>Support</span>
-        </button>
-        <div>
-          <button class="btn-2 btn-primary">
-            <i class="fas fa-comments"></i>
-          </button>
-          <span>Let's talk</span>
+                  <nav id="mobile-menu flex-wrap m-auto">
+                    <ul class="">
+                      <li class="has-sub">
+                        <a href="index.html">Home</a>
+                      </li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="news.html">News</a></li>
+                      <li class="has-sub">
+                        <a href="#">Solutions</a>
+                        <ul>
+                          <li><a href="solution-1.html">Solution 1</a></li>
+                          <li><a href="solution-2.html">Solution 2</a></li>
+                          <li><a href="solution-3.html">Solution 3</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-sub">
+                        <a href="#">Services</a>
+                        <ul>
+                          <li><a href="service-1.html">Service 1</a></li>
+                          <li><a href="service-2.html">Service 2</a></li>
+                          <li><a href="service-3.html">Service 3</a></li>
+                          <li><a href="service-4.html">Service 4</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="reference.html">Reference</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <!-- buttons -->
+              <div class="col-xl-3 col-lg-4 text-right d-lg-block mt-2 mb-2">
+                <div class="login d-flex justify-content-center">
+                  <ul class="">
+                    <li>
+                      <a href="contact.html" class="btn"
+                        ><i class="fa-regular fa-angle-right"></i> Support
+                      </a>
+                    </li>
+                    <li>
+                      <a href="contact.html" class="btn active"
+                        ><i class="fa-regular fa-angle-right"></i> Let’s Talk</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
+
     <!-- header-end -->
     <!-- offcanvas-area -->
     <div class="offcanvas-menu">

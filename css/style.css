@@ -555,7 +555,7 @@ label {
 }
 
 .header-top {
-  padding-top: 40px;
+  padding-top: 60px;
   border-bottom: 1px solid #e6e6e6;
   padding-bottom: 30px;
 }
@@ -828,6 +828,14 @@ label {
   text-align: center;
   color: #fff;
 }
+
+/* #menu-bar {
+  padding: 12px 0px;
+}
+
+#sticky-menu-v-padding {
+  padding: 0px 0px;
+} */
 
 .second-menu .header-social a i {
   padding: 15px 20px;
@@ -1124,7 +1132,7 @@ label {
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 99px;
-  padding-top: 10px;
+  padding-top: 40px;
   padding-bottom: 10px;
 }
 
