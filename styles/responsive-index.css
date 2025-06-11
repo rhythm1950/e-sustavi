@@ -54,7 +54,7 @@
     .stats {
         position: static;
         flex-wrap: wrap;
-        max-width: 100%;
+        width: 100%;
         justify-content: center;
         gap: 1rem;
         padding: 1rem 0;
@@ -143,6 +143,42 @@
         font-size: 0.75rem;
     }
 }
+
+/* news or carousel */
+
+/* Responsive: 3 cards (medium screens < 1024px) */
+@media (max-width: 1024px) {
+    .card {
+        flex: 0 0 calc((100% - 20px * 2) / 3);
+        height: 280px;
+    }
+
+    .carousel {
+        gap: 20px;
+    }
+
+
+}
+
+/* Responsive: 1 card (small screens < 600px) */
+@media (max-width: 600px) {
+    .card {
+        flex: 0 0 100%;
+        height: 240px;
+    }
+
+    .carousel-btn {
+        height: 30px;
+        font-size: 1em;
+    }
+
+    .carousel {
+        gap: 12px;
+    }
+}
+
+
+
 
 /* about section */
 /* Tablet devices (up to 1024px) */
