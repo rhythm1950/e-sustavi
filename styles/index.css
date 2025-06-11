@@ -138,6 +138,7 @@ body {
     justify-content: space-between;
     width: 84%;
     height: 100vh;
+    margin: 0 auto;
     /* position: relative; */
     /* padding: 170px 0px; */
 }
@@ -190,7 +191,7 @@ body {
     width: 84%;
     margin: 0 auto;
     display: flex;
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
     justify-content: space-between;
     gap: .7rem;
     padding: 1rem;
