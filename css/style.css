@@ -15564,3 +15564,13 @@ blockquote cite {
   top: 0;
   font-size: 38px;
 }
+.brand-logo-ul img {
+    width: 264px;
+    height: 120px;
+    object-fit: contain; /* This ensures the aspect ratio is preserved */
+}
+.integration-logo-ul img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
