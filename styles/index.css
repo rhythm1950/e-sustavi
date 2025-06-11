@@ -136,7 +136,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 84%;
     height: 100vh;
     /* position: relative; */
     /* padding: 170px 0px; */
@@ -187,7 +187,7 @@ body {
 .stats {
     position: absolute;
     bottom: 0;
-    max-width: 80%;
+    width: 84%;
     margin: 0 auto;
     display: flex;
     box-sizing: content-box;
@@ -413,7 +413,7 @@ body {
 }
 
 .about-container {
-    max-width: 84%;
+    width: 84%;
     margin: 0 auto;
     padding: 0 16px;
 }
@@ -489,7 +489,7 @@ body {
 }
 
 .about-desc {
-    max-width: 780px;
+    width: 80%;
     margin: 0 auto 32px auto;
     font-size: 1rem;
     color: #5d5d6d;
@@ -534,7 +534,7 @@ body {
 }
 
 .service-container {
-    max-width: 86%;
+    width: 84%;
 
     margin: 0 auto;
 }
@@ -552,8 +552,10 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 28px;
+    /* border: 2px solid red; */
     /* flex-wrap: wrap; */
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -1072,24 +1074,26 @@ section {
 .sell-container {
     width: 84%;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
 }
 
 .sell-section-card {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
     width: 100%;
-    margin: 60px auto;
-    /* padding: 60px 0px; */
+    /* margin: 60px auto; */
+    padding: 60px 0px;
 
     gap: 48px;
+    /* border: 2px solid red; */
+    height: 100%;
 }
 
 .sell-section-img {
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -1192,9 +1196,11 @@ section {
 .maintenance-card {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    /* border: 2px solid red; */
     width: 100%;
-    margin: 60px auto;
+    /* margin: 60px auto; */
+    padding: 60px 0px;
     gap: 100px;
 
 }
@@ -1202,7 +1208,7 @@ section {
 .maintenance-img {
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 

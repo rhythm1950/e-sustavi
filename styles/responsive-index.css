@@ -153,6 +153,7 @@
 
     .about-desc {
         font-size: 0.95rem;
+        width: 90%;
     }
 
     .about-image-container {
@@ -176,6 +177,7 @@
     .about-desc {
         font-size: 0.7rem;
         margin-bottom: 24px;
+        width: 98%;
     }
 
     .about-image-container {
@@ -543,6 +545,7 @@
         width: 100%;
         text-align: center;
         align-items: center;
+        justify-content: center;
     }
 
     .sell-section-img img {
