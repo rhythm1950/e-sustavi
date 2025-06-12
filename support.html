@@ -1,19 +1,626 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="zxx">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>e-sustavi | get-support</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Customer Support - e-Sustavi</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/e-logo.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-pro/css/all.min.css">
+    <link rel="stylesheet" href="css/dripicons.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/meanmenu.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- header css -->
+    <link rel="stylesheet" href="./styles/header.css">
 </head>
 
 <body>
-
-    <div class="d-flex align-items-center justify-content-center">
-        <h3 style="color: rgb(39, 7, 7); padding: 50px; border-radius: 20px; border: 2px solid rgb(66, 61, 61); ">
-            Support is comming soon!
-        </h3>
+    <!--  Preloader  -->
+    <div id="preloader">
+        <div id="loading"> </div>
     </div>
+    <!--  Preloader end  -->
+    <!-- header -->
+
+    <header class="header-area header">
+        <div class="header-top second-header d-none d-md-block">
+            <div class="container-fluid pl-80 pr-80">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-3 d-none d-md-block">
+                        <div class="header-social">
+                            <span>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </span>
+                            <!--  /social media icon redux -->
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-9 d-none d-md-block text-right">
+                        <div class="header-cta">
+                            <ul>
+                                <li>
+                                    <div class="call-box">
+                                        <div class="icon">
+                                            <i class="fa-regular fa-phone"></i>
+                                        </div>
+                                        <div class="text">
+                                            <strong><a href="tel:+917052101786">+385 1 3667 221</a></strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="call-box">
+                                        <div class="icon">
+                                            <i class="fa-regular fa-envelope"></i>
+                                        </div>
+                                        <div class="text">
+                                            <strong><a href="mailto:info@example.com">info@e-sustavi.hr</a></strong>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="header-sticky" class="menu-area w-100">
+            <div class="container-fluid">
+                <div class="second-menu" id="menu-bar">
+                    <div class="d-flex row justify-content-evenly align-items-center">
+                        <!-- logo -->
+
+                        <div class="col-xl-2 col-lg-2 d-flex justify-content-center align-items-center">
+                            <div class="logo p-3 d-flex align-items-center justify-content-center">
+                                <a href="index.html"><img src="./assets/e-sustavi-logo 1.png" alt="logo" /></a>
+                            </div>
+                        </div>
+
+                        <!-- menu -->
+                        <div class="col-xl-6 col-lg-6 responsive-m">
+                            <div class="main-menu align-items-center d-flex justify-content-center">
+                                <nav id="mobile-menu flex-wrap m-auto">
+                                    <ul class="">
+                                        <li class="has-sub">
+                                            <a href="index.html">Home</a>
+                                            <ul>
+                                                <li><a href="home2.html">Home-2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="news.html">News</a></li>
+                                        <li class="has-sub">
+                                            <a href="solutions.html">Solutions</a>
+                                            <ul>
+                                                <li><a href="solution-1.html">Solution 1</a></li>
+                                                <li><a href="solution-2.html">Solution 2</a></li>
+                                                <li><a href="solution-3.html">Solution 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-sub">
+                                            <a href="services.html">Services</a>
+                                            <ul>
+                                                <li><a href="service-1.html">Service 1</a></li>
+                                                <li><a href="service-2.html">Service 2</a></li>
+                                                <li><a href="service-3.html">Service 3</a></li>
+                                                <li><a href="service-4.html">Service 4</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="reference.html">Reference</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- buttons -->
+                        <div class="col-xl-3 col-lg-4 text-right d-lg-block mt-2 mb-2">
+                            <div class="login d-flex justify-content-center">
+                                <ul class="navbar-btns">
+                                    <li>
+                                        <a href="support.html" class="support-btn "><i
+                                                class="fa-regular fa-angle-right"></i> Support
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html" class="chat-btn"><i
+                                                class="fa-regular fa-angle-right"></i> Let’s Talk</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- header end -->
+    <!-- offcanvas-area -->
+    <div class="offcanvas-menu">
+        <span class="menu-close"><i class="fas fa-times"></i></span>
+        <form role="search" method="get" id="searchform" class="searchform" action="#">
+            <input type="text" name="s" id="search" placeholder="Search" />
+            <button><i class="fa fa-search"></i></button>
+        </form>
+
+
+        <div id="cssmenu3" class="menu-one-page-menu-container">
+            <ul class="menu">
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="index.html">Home</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="about.html">About Us</a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="services.html">Services</a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="pricing.html">Pricing </a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="team.html">Team </a></li>
+
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="projects.html">Cases
+                        Study</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="blog.html">Blog</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="cssmenu2" class="menu-one-page-menu-container">
+            <ul id="menu-one-page-menu-12" class="menu">
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#home"><span>+8 12
+                            3456897</span></a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom"><a
+                        href="#howitwork"><span>info@example.com</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="offcanvas-overly"></div>
+    <!-- offcanvas-end -->
+    <!-- main-area -->
+   <main>
+      <!-- breadcrumb-area -->
+      <section
+        class="breadcrumb-area d-flex align-items-center"
+        style="background-image: url(./assets/section-title-bg.png)"
+      >
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-12 col-lg-12">
+              <div class="breadcrumb-wrap text-center">
+                <div class="breadcrumb-title">
+                  <div class="breadcrumb-wrap-nav">
+                    <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                          <a href="index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                          Support
+                        </li>
+                      </ol>
+                    </nav>
+                  </div>
+                  <h2>Since from 2000</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- breadcrumb-area-end -->
+      <!-- about-area -->
+      <section class="about-area about-p pt-120 pb-120 p-relative fix">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div
+                class="s-about-img4 p-relative wow fadeInLeft animated"
+                data-animation="fadeInLeft"
+                data-delay=".4s"
+              >
+                <img
+                  src="https://images.unsplash.com/flagged/photo-1556514767-5c270b96a005?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="rounded"
+                  alt="img"
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div
+                class="about-content s-about-content wow fadeInRight animated"
+                data-animation="fadeInRight"
+                data-delay=".4s"
+              >
+                <div class="about-title about-title2 pb-25">
+                  <h5><span>Journey was started</span></h5>
+                  <h2>
+                    e-Sustavi doo
+                  </h2>
+                </div>
+                <p>
+                  e-Sustavi doo, founded in 2008, is a Croatian IT company
+                  specializing in modern software solutions for businesses.
+                </p>
+                <p>
+                  Our services consist of preparing companies for the
+                  digitalization of their business processes by introducing
+                  Luceed ERP or Odoo ERP/CRM software solutions, website
+                  development, webshop development integrated with Luceed/Odoo
+                  ERP systems, hosting solutions, and business optimization in
+                  more mature business phases.
+                </p>
+                <div class="slider-btn mt-30">
+                  <a href="contact.html" class="btn btn-line"
+                    ><i class="fa-regular fa-angle-right"></i> Learn more</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+      </section>
+
+            <!-- about-area 2-->
+      <section class="about-area about-p pt-120 pb-120 p-relative fix">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div
+                class="about-content s-about-content wow fadeInRight animated"
+                data-animation="fadeInRight"
+                data-delay=".4s"
+              >
+                <div class="about-title about-title2 pb-25">
+                  <h5><span>Team Expansion and Culture</span></h5>
+                  <h2>
+                    Our team
+                  </h2>
+                </div>
+                <p>
+                  Our team includes programmers, designers, project managers,
+                  analysts, support, and sales professionals.
+                </p>
+                <p>
+                  e-Sustavi doo is a team of about 10 employees with different
+                  profiles, knowledge and competencies who have so far digitized
+                  more than 300 companies in Croatia with Luceed and Odoo
+                  software solutions delivered at the highest level of quality.
+                </p>
+                <div class="slider-btn mt-30">
+                  <a href="contact.html" class="btn btn-line"
+                    ><i class="fa-regular fa-angle-right"></i> Learn more</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div
+                class="s-about-img4 p-relative wow fadeInLeft animated"
+                data-animation="fadeInLeft"
+                data-delay=".4s"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1688561809321-e51e8a4d6651?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="rounded"
+                  alt="img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- about-area -->
+       <section class="about-area about-p pt-120 pb-50 p-relative fix">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div
+                class="about-content s-about-content pl-15 wow fadeInLeft animated"
+                data-animation="fadeInLeft"
+                data-delay=".4s"
+              >
+                <div class="section-title mb-30">
+                  <h5><span>Data-driven coaching</span></h5>
+                  <h2>It’ll find and <span>fix anything that hurts </span></h2>
+                </div>
+                <p>
+                  Present your content in a unique way. Design your own single
+                  post template form scratch, place by plece.
+                </p>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="about-ul">
+                      <div class="icon">
+                        <img src="img/icon/ab-icon-01.png" alt="icon01" />
+                      </div>
+                      <div class="text">Increase reply rates</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="about-ul">
+                      <div class="icon">
+                        <img src="img/icon/ab-icon-02.png" alt="icon01" />
+                      </div>
+                      <div class="text">Increase reply rates</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="about-ul">
+                      <div class="icon">
+                        <img src="img/icon/ab-icon-03.png" alt="icon01" />
+                      </div>
+                      <div class="text">Increase reply rates</div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="about-ul">
+                      <div class="icon">
+                        <img src="img/icon/ab-icon-04.png" alt="icon01" />
+                      </div>
+                      <div class="text">Increase reply rates</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-btn mt-50">
+                  <a href="contact.html" class="btn btn-brown"
+                    ><i class="fa-regular fa-angle-right"></i> Power your
+                    words</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div
+                class="s-about-img p-relative wow fadeInRight animated"
+                data-animation="fadeInRight"
+                data-delay=".4s"
+              >
+                <img
+                src="https://images.unsplash.com/photo-1648134859179-5d6258f776af?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="rounded alt=" img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about-area-end -->
+
+          <!-- service-area -->
+    <section class="service-details-two p-relative pt-120 pb-90">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+            <div class="section-title mb-80 wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
+              <h5><span>Features</span></h5>
+              <h2>Why choose <span>cour app</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="services-box07 mb-30 wow fadeInUp animated" data-animation="fadeInLeft" data-delay=".4s">
+              <div class="sr-contner-one">
+                <div class="icon">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1661478077053-b914e0b66c2f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    style="width: 330px; height: 300px" class="rounded" alt="icon01" />
+                </div>
+                <div class="text">
+                  <h5>
+                    <a href="solution-1.html">Digitalize Your Business</a>
+                  </h5>
+                  <p>Turn a New Page in Business - Digitize Yourself</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="services-box07 mb-30 wow fadeInUp animated" data-animation="fadeInLeft" data-delay=".4s">
+              <div class="sr-contner-one">
+                <div class="icon">
+                  <img src="assets/luceed.png" style="
+                        width: 330px;
+                        height: auto;
+                        margin-bottom: 150px;
+                        margin-top: 105px;
+                      " class="rounded" alt="icon01" />
+                </div>
+                <div class="text">
+                  <h5>
+                    <a href="solution-2.html">Luceed Business Solution</a>
+                  </h5>
+                  <p>
+                    We includes well designed components which always gives.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="services-box07 mb-30 wow fadeInUp animated" data-animation="fadeInLeft" data-delay=".4s">
+              <div class="sr-contner-one">
+                <div class="icon">
+                  <img src="https://th.bing.com/th/id/OIP.g56HUAyHOGD8OPh5MIXs5gHaD3?rs=1&pid=ImgDetMain" style="
+                        width: 330px;
+                        margin-top: 80px;
+                        margin-bottom: 50px;
+                      " class="rounded" alt="icon01" />
+                </div>
+                <div class="text">
+                  <h5>
+                    <a href="solution-3.html">ODOO Business Solution</a>
+                  </h5>
+                  <p>
+                    Odoo: The World's Leading Open Source Business Solution
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      
+      
+      <!-- cta-area-end -->
+    </main>
+    <!-- main-area-end -->
+    <!-- footer -->
+    <footer class="footer-bg footer-p  p-relative">
+        <div class="footer-top  pt-120 pb-90">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-3 col-lg-3 col-sm-6">
+                        <div class="footer-widget mb-30">
+                            <div class="f-widget-title">
+                                <h2> <img src="assets/e-sustavi-logo 1.png" alt="img"></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-sm-6">
+                        <div class="footer-widget mb-30">
+                            <div class="footer-link f-product">
+                                <div class="f-widget-title">
+                                    <h2>Product</h2>
+                                </div>
+                                <ul>
+                                    <li><a href="index.html">Documentation</a></li>
+                                    <li><a href="index.html">Changelog</a></li>
+                                    <li><a href="index.html">Pricing</a></li>
+                                    <li><a href="index.html">Parsers</a></li>
+                                    <li><a href="index.html">SDTF <span>New</span></a></li>
+                                    <li><a href="index.html">Use cases</a></li>
+                                    <li><a href="index.html">Launch weak</a></li>
+                                    <li><a href="index.html">Feedback</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-sm-12">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                <div class="footer-widget mb-30">
+                                    <div class="f-widget-title">
+                                        <h2>Resources</h2>
+                                    </div>
+                                    <div class="footer-link">
+                                        <ul>
+                                            <li><a href="index.html">Guide</a></li>
+                                            <li><a href="index.html">Blog</a></li>
+                                            <li><a href="index.html">Customers</a></li>
+                                            <li><a href="index.html">Help center</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                <div class="footer-widget mb-30">
+                                    <div class="f-widget-title">
+                                        <h2>Company</h2>
+                                    </div>
+                                    <div class="footer-link">
+                                        <ul>
+                                            <li><a href="index.html">Press kit</a></li>
+                                            <li><a href="index.html">Climate</a></li>
+                                            <li><a href="index.html">Jobs</a></li>
+                                            <li><a href="index.html">Contact us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-sm-6">
+                                <div class="footer-widget mb-30">
+                                    <div class="f-widget-title">
+                                        <h2>Community</h2>
+                                    </div>
+                                    <div class="footer-link">
+                                        <ul>
+                                            <li><a href="index.html">Discord</a></li>
+                                            <li><a href="index.html">Facebook</a></li>
+                                            <li><a href="index.html">Twitter</a></li>
+                                            <li><a href="index.html">Youtube</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-sm-6">
+                                <div class="footer-widget mb-30">
+                                    <div class="footer-banner">
+                                        <img src="img/bg/footer-banner.png" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap">
+            <div class="container">
+                <div class="row align-items-center c-mid">
+                    <div class="col-lg-6 col-md-6 ">
+                        <ul>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12 text-right text-xl-right">
+                        <div class="copy-text">
+                            @2024 Epizik. Design & development right reserved.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- footer-end -->
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/paroller.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/js_isotope.pkgd.min.js"></script>
+    <script src="js/imagesloaded.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/parallax-scroll.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/element-in-view.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
