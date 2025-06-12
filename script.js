@@ -167,3 +167,4 @@ window.addEventListener('resize', () => {
 window.addEventListener('DOMContentLoaded', () => {
     renderCarousel();
 });
+

@@ -16,3 +16,4 @@ navItems.forEach(item => {
         item.classList.add("active");
     }
 });
+
