@@ -1,635 +1,692 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Solution 2 - e-Sustavi</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/e-logo.png" />
+    <!-- Place favicon.ico in the root directory -->
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>Epzik - Software & IT Solutions HTML Template</title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
-  <!-- Place favicon.ico in the root directory -->
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="fontawesome-pro/css/all.min.css" />
+    <link rel="stylesheet" href="css/dripicons.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/meanmenu.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- header css -->
+    <link rel="stylesheet" href="./styles/header.css" />
+  </head>
 
-  <!-- CSS here -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/animate.min.css" />
-  <link rel="stylesheet" href="css/magnific-popup.css" />
-  <link rel="stylesheet" href="fontawesome/css/all.min.css" />
-  <link rel="stylesheet" href="fontawesome-pro/css/all.min.css" />
-  <link rel="stylesheet" href="css/dripicons.css" />
-  <link rel="stylesheet" href="css/slick.css" />
-  <link rel="stylesheet" href="css/meanmenu.css" />
-  <link rel="stylesheet" href="css/swiper.min.css" />
-  <link rel="stylesheet" href="css/default.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
-  <!-- header css -->
-  <link rel="stylesheet" href="./styles/header.css" />
-</head>
+  <body>
+    <!--  Preloader  -->
+    <div id="preloader">
+      <div id="loading"></div>
+    </div>
+    <!--  Preloader end  -->
 
-<body>
-  <!--  Preloader  -->
-  <div id="preloader">
-    <div id="loading"></div>
-  </div>
-  <!--  Preloader end  -->
-
-  <header class="header-area header">
-  <!-- Top Bar (Visible on desktop only) -->
-  <div class="header-top second-header d-none d-md-block">
-    <div class="container-fluid pl-80 pr-80">
-      <div class="row align-items-center">
-        <div class="col-lg-4 col-md-3 d-none d-md-block">
-          <div class="header-social">
-            <span>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-            </span>
-          </div>
-        </div>
-        <div class="col-lg-8 col-md-9 d-none d-md-block text-right">
-          <div class="header-cta">
-            <ul>
-              <li>
-                <div class="call-box">
-                  <div class="icon">
-                    <i class="fa-regular fa-phone"></i>
-                  </div>
-                  <div class="text">
-                    <strong><a href="tel:+38513667221">+385 1 3667 221</a></strong>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="call-box">
-                  <div class="icon">
-                    <i class="fa-regular fa-envelope"></i>
-                  </div>
-                  <div class="text">
-                    <strong><a href="mailto:info@e-sustavi.hr">info@e-sustavi.hr</a></strong>
-                  </div>
-                </div>
-              </li>
-            </ul>
+    <header class="header-area header">
+      <!-- Top Bar (Visible on desktop only) -->
+      <div class="header-top second-header d-none d-md-block">
+        <div class="container-fluid pl-80 pr-80">
+          <div class="row align-items-center">
+            <div class="col-lg-4 col-md-3 d-none d-md-block">
+              <div class="header-social">
+                <span>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </span>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-9 d-none d-md-block text-right">
+              <div class="header-cta">
+                <ul>
+                  <li>
+                    <div class="call-box">
+                      <div class="icon">
+                        <i class="fa-regular fa-phone"></i>
+                      </div>
+                      <div class="text">
+                        <strong
+                          ><a href="tel:+38513667221"
+                            >+385 1 3667 221</a
+                          ></strong
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="call-box">
+                      <div class="icon">
+                        <i class="fa-regular fa-envelope"></i>
+                      </div>
+                      <div class="text">
+                        <strong
+                          ><a href="mailto:info@e-sustavi.hr"
+                            >info@e-sustavi.hr</a
+                          ></strong
+                        >
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Main Navigation -->
-  <div id="header-sticky" class="menu-area w-100">
-    <div class="container-fluid">
-      <div class="second-menu" id="menu-bar">
-        <div class="d-flex row justify-content-between align-items-center">
-          <!-- Logo -->
-          <div class="col-xl-2 col-lg-2 col-6">
-            <div class="logo p-3 d-flex align-items-center">
-              <a href="index.html"><img src="./assets/e-sustavi-logo 1.png" alt="logo" /></a>
+      <!-- Main Navigation -->
+      <div id="header-sticky" class="menu-area w-100">
+        <div class="container-fluid">
+          <div class="second-menu" id="menu-bar">
+            <div class="d-flex row justify-content-between align-items-center">
+              <!-- Logo -->
+              <div class="col-xl-2 col-lg-2 col-6">
+                <div class="logo p-3 d-flex align-items-center">
+                  <a href="index.html"
+                    ><img src="./assets/e-sustavi-logo 1.png" alt="logo"
+                  /></a>
+                </div>
+              </div>
+
+              <!-- Mobile Menu Toggle -->
+              <div class="col-6 d-lg-none text-right">
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                  <i class="fas fa-bars"></i>
+                </button>
+              </div>
+
+              <!-- Desktop Menu (Hidden on mobile) -->
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block">
+                <div class="main-menu">
+                  <nav id="desktop-menu">
+                    <ul>
+                      <li class="has-sub">
+                        <a href="index.html">Home</a>
+                        <ul>
+                          <li><a href="home2.html">Home-2</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="news.html">News</a></li>
+                      <li class="has-sub">
+                        <a href="solutions.html">Solutions</a>
+                        <ul>
+                          <li><a href="solution-1.html">Solution 1</a></li>
+                          <li><a href="solution-2.html">Solution 2</a></li>
+                          <li><a href="solution-3.html">Solution 3</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-sub">
+                        <a href="services.html">Services</a>
+                        <ul>
+                          <li><a href="service-1.html">Service 1</a></li>
+                          <li><a href="service-2.html">Service 2</a></li>
+                          <li><a href="service-3.html">Service 3</a></li>
+                          <li><a href="service-4.html">Service 4</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="reference.html">Reference</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+
+              <!-- Desktop Buttons (Hidden on mobile) -->
+              <div
+                class="col-xl-3 col-lg-4 text-right d-none d-lg-block mt-2 mb-2"
+              >
+                <div class="login">
+                  <ul class="navbar-btns">
+                    <li>
+                      <a href="support.html" class="support-btn"
+                        ><i class="fa-regular fa-angle-right"></i> Support</a
+                      >
+                    </li>
+                    <li>
+                      <a href="contact.html" class="chat-btn"
+                        ><i class="fa-regular fa-angle-right"></i> Let's Talk</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          <!-- Mobile Menu Toggle -->
-          <div class="col-6 d-lg-none text-right">
-            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-              <i class="fas fa-bars"></i>
+      <!-- Mobile Menu Overlay -->
+      <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+      <!-- Mobile Menu Content -->
+      <div class="mobile-menu-container" id="mobile-menu-container">
+        <div class="mobile-menu-wrapper">
+          <div class="mobile-menu-header">
+            <div class="logo">
+              <a href="index.html"
+                ><img src="./assets/e-sustavi-logo 1.png" alt="logo"
+              /></a>
+            </div>
+            <button class="mobile-menu-close" id="mobile-menu-close">
+              <i class="fas fa-times"></i>
             </button>
           </div>
 
-          <!-- Desktop Menu (Hidden on mobile) -->
-          <div class="col-xl-6 col-lg-6 d-none d-lg-block">
-            <div class="main-menu">
-              <nav id="desktop-menu">
-                <ul>
-                  <li class="has-sub">
-                    <a href="index.html">Home</a>
-                    <ul>
-                      <li><a href="home2.html">Home-2</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="news.html">News</a></li>
-                  <li class="has-sub">
-                    <a href="solutions.html">Solutions</a>
-                    <ul>
-                      <li><a href="solution-1.html">Solution 1</a></li>
-                      <li><a href="solution-2.html">Solution 2</a></li>
-                      <li><a href="solution-3.html">Solution 3</a></li>
-                    </ul>
-                  </li>
-                  <li class="has-sub">
-                    <a href="services.html">Services</a>
-                    <ul>
-                      <li><a href="service-1.html">Service 1</a></li>
-                      <li><a href="service-2.html">Service 2</a></li>
-                      <li><a href="service-3.html">Service 3</a></li>
-                      <li><a href="service-4.html">Service 4</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="reference.html">Reference</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+          <nav class="mobile-menu">
+            <ul>
+              <li class="menu-item">
+                <a href="index.html">Home</a>
+                <ul class="sub-menu">
+                  <li><a href="home2.html">Home-2</a></li>
                 </ul>
-              </nav>
-            </div>
+                <span class="dropdown-toggle"
+                  ><i class="fas fa-chevron-down"></i
+                ></span>
+              </li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="news.html">News</a></li>
+              <li class="menu-item">
+                <a href="solutions.html">Solutions</a>
+                <ul class="sub-menu">
+                  <li><a href="solution-1.html">Solution 1</a></li>
+                  <li><a href="solution-2.html">Solution 2</a></li>
+                  <li><a href="solution-3.html">Solution 3</a></li>
+                </ul>
+                <span class="dropdown-toggle"
+                  ><i class="fas fa-chevron-down"></i
+                ></span>
+              </li>
+              <li class="menu-item">
+                <a href="services.html">Services</a>
+                <ul class="sub-menu">
+                  <li><a href="service-1.html">Service 1</a></li>
+                  <li><a href="service-2.html">Service 2</a></li>
+                  <li><a href="service-3.html">Service 3</a></li>
+                  <li><a href="service-4.html">Service 4</a></li>
+                </ul>
+                <span class="dropdown-toggle"
+                  ><i class="fas fa-chevron-down"></i
+                ></span>
+              </li>
+              <li><a href="reference.html">Reference</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="mobile-menu-buttons">
+            <a href="support.html" class="mobile-support-btn"
+              ><i class="fa-regular fa-angle-right"></i> Support</a
+            >
+            <a href="contact.html" class="mobile-chat-btn"
+              ><i class="fa-regular fa-angle-right"></i> Let's Talk</a
+            >
           </div>
 
-          <!-- Desktop Buttons (Hidden on mobile) -->
-          <div class="col-xl-3 col-lg-4 text-right d-none d-lg-block mt-2 mb-2">
-            <div class="login">
-              <ul class="navbar-btns">
+          <div class="mobile-menu-footer">
+            <div class="header-social">
+              <span>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </span>
+            </div>
+            <div class="header-cta" style="margin-top: 35px">
+              <ul>
                 <li>
-                  <a href="support.html" class="support-btn"><i class="fa-regular fa-angle-right"></i> Support</a>
+                  <div class="call-box">
+                    <i class="fa-regular fa-phone"></i>
+                    <div class="text">
+                      <strong
+                        ><a href="tel:+38513667221">+385 1 3667 221</a></strong
+                      >
+                    </div>
+                  </div>
                 </li>
                 <li>
-                  <a href="contact.html" class="chat-btn"><i class="fa-regular fa-angle-right"></i> Let's Talk</a>
+                  <div class="call-box">
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <div class="text">
+                      <strong
+                        ><a href="mailto:info@e-sustavi.hr"
+                          >info@e-sustavi.hr</a
+                        ></strong
+                      >
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </header>
 
-  <!-- Mobile Menu Overlay -->
-  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    <!-- header end -->
+    <!-- offcanvas-area -->
+    <div class="offcanvas-menu">
+      <span class="menu-close"><i class="fas fa-times"></i></span>
+      <form
+        role="search"
+        method="get"
+        id="searchform"
+        class="searchform"
+        action="#"
+      >
+        <input type="text" name="s" id="search" placeholder="Search" />
+        <button><i class="fa fa-search"></i></button>
+      </form>
 
-  <!-- Mobile Menu Content -->
-  <div class="mobile-menu-container" id="mobile-menu-container">
-    <div class="mobile-menu-wrapper">
-      <div class="mobile-menu-header">
-        <div class="logo">
-          <a href="index.html"><img src="./assets/e-sustavi-logo 1.png" alt="logo" /></a>
-        </div>
-        <button class="mobile-menu-close" id="mobile-menu-close">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-
-      <nav class="mobile-menu">
-        <ul>
-          <li class="menu-item">
+      <div id="cssmenu3" class="menu-one-page-menu-container">
+        <ul class="menu">
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
             <a href="index.html">Home</a>
-            <ul class="sub-menu">
-              <li><a href="home2.html">Home-2</a></li>
-            </ul>
-            <span class="dropdown-toggle"><i class="fas fa-chevron-down"></i></span>
           </li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="news.html">News</a></li>
-          <li class="menu-item">
-            <a href="solutions.html">Solutions</a>
-            <ul class="sub-menu">
-              <li><a href="solution-1.html">Solution 1</a></li>
-              <li><a href="solution-2.html">Solution 2</a></li>
-              <li><a href="solution-3.html">Solution 3</a></li>
-            </ul>
-            <span class="dropdown-toggle"><i class="fas fa-chevron-down"></i></span>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="about.html">About Us</a>
           </li>
-          <li class="menu-item">
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
             <a href="services.html">Services</a>
-            <ul class="sub-menu">
-              <li><a href="service-1.html">Service 1</a></li>
-              <li><a href="service-2.html">Service 2</a></li>
-              <li><a href="service-3.html">Service 3</a></li>
-              <li><a href="service-4.html">Service 4</a></li>
-            </ul>
-            <span class="dropdown-toggle"><i class="fas fa-chevron-down"></i></span>
           </li>
-          <li><a href="reference.html">Reference</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="pricing.html">Pricing </a>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="team.html">Team </a>
+          </li>
+
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="projects.html">Cases Study</a>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="blog.html">Blog</a>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="contact.html">Contact</a>
+          </li>
         </ul>
-      </nav>
-
-      <div class="mobile-menu-buttons">
-        <a href="support.html" class="mobile-support-btn"><i class="fa-regular fa-angle-right"></i> Support</a>
-        <a href="contact.html" class="mobile-chat-btn"><i class="fa-regular fa-angle-right"></i> Let's Talk</a>
       </div>
 
-      <div class="mobile-menu-footer">
-        <div class="header-social">
-          <span>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-          </span>
-        </div>
-        <div class="header-cta" style="margin-top: 35px;">
-          <ul>
-            <li>
-              <div class="call-box">
-                <i class="fa-regular fa-phone"></i>
-                <div class="text">
-                  <strong><a href="tel:+38513667221">+385 1 3667 221</a></strong>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="call-box">
-                
-                  <i class="fa-regular fa-envelope"></i>
-                
-                <div class="text">
-                  <strong><a href="mailto:info@e-sustavi.hr">info@e-sustavi.hr</a></strong>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
+      <div id="cssmenu2" class="menu-one-page-menu-container">
+        <ul id="menu-one-page-menu-12" class="menu">
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="#home"><span>+8 12 3456897</span></a>
+          </li>
+          <li class="menu-item menu-item-type-custom menu-item-object-custom">
+            <a href="#howitwork"><span>info@example.com</span></a>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
-</header>
-
-  <!-- header end -->
-  <!-- offcanvas-area -->
-  <div class="offcanvas-menu">
-    <span class="menu-close"><i class="fas fa-times"></i></span>
-    <form role="search" method="get" id="searchform" class="searchform" action="#">
-      <input type="text" name="s" id="search" placeholder="Search" />
-      <button><i class="fa fa-search"></i></button>
-    </form>
-
-    <div id="cssmenu3" class="menu-one-page-menu-container">
-      <ul class="menu">
-        <li class="menu-item menu-item-type-custom menu-item-object-custom">
-          <a href="index.html">Home</a>
-        </li>
-        <li class="menu-item menu-item-type-custom menu-item-object-custom">
-          <a href="about.html">About Us</a>
-        </li>
-        <li class="menu-item menu-item-type-custom menu-item-object-custom">
-          <a href="services.html">Services</a>
-        </li>
-        <li class="menu-item menu-item-type-custom menu-item-object-custom">
-          <a href="pricing.html">Pricing </a>
-        </li>
-        <li class="menu-item menu-item-type-custom menu-item-object-custom">
-          <a href="team.html">Team </a>
-        </li>
-
-        <li class="menu-item menu-item-type-custom menu-item-object-custom">
-          <a href="projects.html">Cases Study</a>
-        </li>
-        <li class="menu-item menu-item-type-custom menu-item-object-custom">
-          <a href="blog.html">Blog</a>
-        </li>
-        <li class="menu-item menu-item-type-custom menu-item-object-custom">
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-
-    <div id="cssmenu2" class="menu-one-page-menu-container">
-      <ul id="menu-one-page-menu-12" class="menu">
-        <li class="menu-item menu-item-type-custom menu-item-object-custom">
-          <a href="#home"><span>+8 12 3456897</span></a>
-        </li>
-        <li class="menu-item menu-item-type-custom menu-item-object-custom">
-          <a href="#howitwork"><span>info@example.com</span></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="offcanvas-overly"></div>
-  <!-- offcanvas-end -->
-  <!-- main-area -->
-  <main>
-    <!-- search-popup -->
-    <div class="modal fade bs-example-modal-lg search-bg popup1" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content search-popup">
-          <div class="text-center">
-            <a href="#" class="close2" data-dismiss="modal" aria-label="Close">× close</a>
-          </div>
-          <div class="row search-outer">
-            <div class="col-md-11">
-              <input type="text" placeholder="Search for products..." />
+    <div class="offcanvas-overly"></div>
+    <!-- offcanvas-end -->
+    <!-- main-area -->
+    <main>
+      <!-- search-popup -->
+      <div
+        class="modal fade bs-example-modal-lg search-bg popup1"
+        tabindex="-1"
+        role="dialog"
+      >
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content search-popup">
+            <div class="text-center">
+              <a href="#" class="close2" data-dismiss="modal" aria-label="Close"
+                >× close</a
+              >
             </div>
-            <div class="col-md-1 text-right">
-              <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+            <div class="row search-outer">
+              <div class="col-md-11">
+                <input type="text" placeholder="Search for products..." />
+              </div>
+              <div class="col-md-1 text-right">
+                <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- /search-popup -->
-    <!-- breadcrumb-area -->
-    <section class="breadcrumb-area d-flex align-items-center"  style="background-image: url(./assets/section-title-bg.png)">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-xl-12 col-lg-12">
-            <div class="breadcrumb-wrap text-center">
-              <div class="breadcrumb-title">
-                <div class="breadcrumb-wrap-nav">
-                  <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item">
-                        <a href="index.html">Home</a>
+      <!-- /search-popup -->
+      <!-- breadcrumb-area -->
+      <section
+        class="breadcrumb-area d-flex align-items-center"
+        style="background-image: url(./assets/section-title-bg.png)"
+      >
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-12 col-lg-12">
+              <div class="breadcrumb-wrap text-center">
+                <div class="breadcrumb-title">
+                  <div class="breadcrumb-wrap-nav">
+                    <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                          <a href="index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                          Services Deatils
+                        </li>
+                      </ol>
+                    </nav>
+                  </div>
+                  <h2>Services Deatils</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- breadcrumb-area-end -->
+      <!-- service-details-area -->
+      <div class="about-area5 about-p p-relative">
+        <div class="container pt-120 pb-90">
+          <div class="row">
+            <!-- #right side -->
+            <div class="col-sm-12 col-md-12 col-lg-4 order-1">
+              <aside class="sidebar services-sidebar">
+                <!-- Category Widget -->
+                <div class="sidebar-widget categories">
+                  <div class="widget-content">
+                    <h2 class="widget-title">Solutions List</h2>
+                    <!-- Services Category -->
+                    <ul class="services-categories">
+                      <li>
+                        <a href="solution-1.html">Digitalize Your Business </a>
                       </li>
-                      <li class="breadcrumb-item active" aria-current="page">
-                        Services Deatils
+                      <li class="active">
+                        <a href="solution-2.html">Luceed Business Solution </a>
                       </li>
-                    </ol>
-                  </nav>
+                      <li>
+                        <a href="solution-3.html">ODOO Business Solution </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <h2>Services Deatils</h2>
+
+                <div class="sidebar-widget brochures-box">
+                  <div class="inner">
+                    <h4 class="widget-title">Design Guideline</h4>
+                    <div class="text">
+                      Pleasure and praising pain was born and I will give you a
+                      complete account.
+                    </div>
+                    <div class="box mt-20">
+                      <div class="icon">
+                        <i class="fal fa-file-pdf"></i>
+                      </div>
+                      <div class="content">
+                        <a href="#">
+                          <h4>Software File</h4>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="box mt-20">
+                      <div class="icon">
+                        <i class="fal fa-download"></i>
+                      </div>
+                      <div class="content">
+                        <a href="#">
+                          <h4>Html File</h4>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="box mt-20">
+                      <div class="icon">
+                        <i class="fal fa-file-image"></i>
+                      </div>
+                      <div class="content">
+                        <a href="#">
+                          <h4>WordPress file</h4>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+            </div>
+            <!-- #right side end -->
+
+            <div class="col-lg-8 col-md-12 col-sm-12 order-2">
+              <div class="service-detail">
+                <div class="content-box">
+                  <!-- Hero Image -->
+                  <div class="two-column">
+                    <div class="row">
+                      <div class="image-column col-xl-12 col-lg-12 col-md-12">
+                        <figure class="image">
+                          <img
+                            src="assets/luceed.png"
+                            alt="Luceed ERP Solution"
+                          />
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h2>Luceed ERP: Your Complete Domestic Business Solution</h2>
+                  <p>
+                    Our industry-tailored Luceed ERP system integrates all
+                    business processes - from procurement to accounting - in
+                    real-time across Croatia and the region. With 20+ years of
+                    practical experience, we've optimized it for retail,
+                    wholesale, production, and service businesses.
+                  </p>
+
+                  <!-- Two Column Images -->
+                  <div class="two-column">
+                    <div class="row">
+                      <div class="image-column col-xl-6 col-lg-12 col-md-12">
+                        <figure class="image">
+                          <img
+                            src="https://images.unsplash.com/photo-1632078965332-a6f75672b50c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Luceed Real-Time Dashboard"
+                          />
+                        </figure>
+                      </div>
+                      <div class="text-column col-xl-6 col-lg-12 col-md-12">
+                        <figure class="image">
+                          <img
+                            src="https://images.unsplash.com/photo-1652850494316-3d30b01debca?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Luceed Implementation Training"
+                          />
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h3>Why Luceed ERP Stands Out</h3>
+                  <ul class="list-style-one">
+                    <li>
+                      <strong>Real-time data:</strong> Monitor inventory, sales,
+                      and finances across all locations
+                    </li>
+                    <li>
+                      <strong>Multi-language support:</strong> Croatian,
+                      English, Slovenian, Serbian
+                    </li>
+                    <li>
+                      <strong>Seamless integrations:</strong> Webshops,
+                      production lines, courier services, and more
+                    </li>
+                    <li>
+                      <strong>Custom reporting:</strong> Generate OLAP reports
+                      from a single database
+                    </li>
+                  </ul>
+
+                  <h3>Key Modules & Capabilities</h3>
+
+                  <h4>Retail Solutions</h4>
+                  <ul class="list-style-one">
+                    <li>
+                      Real-time POS tracking across all locations and shifts
+                    </li>
+                    <li>Automated branch replenishment and stock monitoring</li>
+                    <li>Integrated loyalty programs and promotional systems</li>
+                    <li>Full fiscal compliance for Balkan region countries</li>
+                  </ul>
+
+                  <h4>Wholesale Management</h4>
+                  <ul class="list-style-one">
+                    <li>End-to-end order tracking from request to delivery</li>
+                    <li>Multi-level partner pricing and rebate controls</li>
+                    <li>Procurement planning based on sales forecasts</li>
+                    <li>eInvoicing and traffic analysis tools</li>
+                  </ul>
+
+                  <h4>Warehouse (WMS) & Logistics</h4>
+                  <ul class="list-style-one">
+                    <li>Optimized picking routes and positional warehousing</li>
+                    <li>LOT/SKU tracking with FEFO expiration management</li>
+                    <li>Courier service integrations with package tracking</li>
+                    <li>Real-time warehouse dashboards</li>
+                  </ul>
+
+                  <h4>Production & Service</h4>
+                  <ul class="list-style-one">
+                    <li>Production order monitoring with cost calculation</li>
+                    <li>Service order lifecycle management</li>
+                    <li>Preventive maintenance scheduling</li>
+                    <li>Equipment history tracking</li>
+                  </ul>
+
+                  <h4>Accounting & HR</h4>
+                  <ul class="list-style-one">
+                    <li>Automated bank statement processing</li>
+                    <li>Multi-currency and interest calculations</li>
+                    <li>
+                      Payroll for all worker types (regular, contractors, etc.)
+                    </li>
+                    <li>Continuous legal compliance updates</li>
+                  </ul>
+
+                  <div class="implementation-box">
+                    <h3>Implementation Process</h3>
+                    <p>
+                      We guide you through every step with department-specific
+                      training to ensure maximum ROI. Our specialists analyze
+                      your workflows to customize Luceed for your exact needs.
+                    </p>
+                  </div>
+
+                  <div class="text-start mt-40">
+                    <a href="#contact" class="btn btn-primary mr-3"
+                      >Request Quote</a
+                    >
+                    <a href="odoo-solution.html" class="btn btn-secondary"
+                      >Explore Odoo Alternative</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- breadcrumb-area-end -->
-    <!-- service-details-area -->
-    <div class="about-area5 about-p p-relative">
-      <div class="container pt-120 pb-90">
-        <div class="row">
-          <!-- #right side -->
-          <div class="col-sm-12 col-md-12 col-lg-4 order-1">
-            <aside class="sidebar services-sidebar">
-              <!-- Category Widget -->
-              <div class="sidebar-widget categories">
-                <div class="widget-content">
-                  <h2 class="widget-title">Solutions List</h2>
-                  <!-- Services Category -->
-                  <ul class="services-categories">
+      <!-- service-details-area-end -->
+    </main>
+    <!-- main-area-end -->
+    <!-- footer -->
+    <footer class="footer-bg footer-p p-relative">
+      <div class="footer-top pt-120 pb-90">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-xl-3 col-lg-3 col-sm-6">
+              <div class="footer-widget mb-30">
+                <div class="f-widget-title">
+                  <h2><img src="assets/e-sustavi-logo 1.png" alt="img" /></h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-sm-6">
+              <div class="footer-widget mb-30">
+                <div class="footer-link f-product">
+                  <div class="f-widget-title">
+                    <h2>Product</h2>
+                  </div>
+                  <ul>
+                    <li><a href="index.html">Documentation</a></li>
+                    <li><a href="index.html">Changelog</a></li>
+                    <li><a href="index.html">Pricing</a></li>
+                    <li><a href="index.html">Parsers</a></li>
                     <li>
-                      <a href="solution-1.html">Digitalize Your Business </a>
+                      <a href="index.html">SDTF <span>New</span></a>
                     </li>
-                    <li class="active">
-                      <a href="solution-2.html">Luceed Business Solution </a>
-                    </li>
-                    <li>
-                      <a href="solution-3.html">ODOO Business Solution </a>
-                    </li>
+                    <li><a href="index.html">Use cases</a></li>
+                    <li><a href="index.html">Launch weak</a></li>
+                    <li><a href="index.html">Feedback</a></li>
                   </ul>
                 </div>
               </div>
-
-              <div class="sidebar-widget brochures-box">
-                <div class="inner">
-                  <h4 class="widget-title">Design Guideline</h4>
-                  <div class="text">
-                    Pleasure and praising pain was born and I will give you a
-                    complete account.
-                  </div>
-                  <div class="box mt-20">
-                    <div class="icon">
-                      <i class="fal fa-file-pdf"></i>
-                    </div>
-                    <div class="content">
-                      <a href="#">
-                        <h4>Software File</h4>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="box mt-20">
-                    <div class="icon">
-                      <i class="fal fa-download"></i>
-                    </div>
-                    <div class="content">
-                      <a href="#">
-                        <h4>Html File</h4>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="box mt-20">
-                    <div class="icon">
-                      <i class="fal fa-file-image"></i>
-                    </div>
-                    <div class="content">
-                      <a href="#">
-                        <h4>WordPress file</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </aside>
-          </div>
-          <!-- #right side end -->
-
-          <div class="col-lg-8 col-md-12 col-sm-12 order-2">
-            <div class="service-detail">
-              <div class="content-box">
-                <!-- Hero Image -->
-                <div class="two-column">
-                  <div class="row">
-                    <div class="image-column col-xl-12 col-lg-12 col-md-12">
-                      <figure class="image">
-                        <img src="assets/luceed.png" alt="Luceed ERP Solution" />
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-
-                <h2>Luceed ERP: Your Complete Domestic Business Solution</h2>
-                <p>
-                  Our industry-tailored Luceed ERP system integrates all
-                  business processes - from procurement to accounting - in
-                  real-time across Croatia and the region. With 20+ years of
-                  practical experience, we've optimized it for retail,
-                  wholesale, production, and service businesses.
-                </p>
-
-                <!-- Two Column Images -->
-                <div class="two-column">
-                  <div class="row">
-                    <div class="image-column col-xl-6 col-lg-12 col-md-12">
-                      <figure class="image">
-                        <img
-                          src="https://images.unsplash.com/photo-1632078965332-a6f75672b50c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                          alt="Luceed Real-Time Dashboard" />
-                      </figure>
-                    </div>
-                    <div class="text-column col-xl-6 col-lg-12 col-md-12">
-                      <figure class="image">
-                        <img
-                          src="https://images.unsplash.com/photo-1652850494316-3d30b01debca?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                          alt="Luceed Implementation Training" />
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-
-                <h3>Why Luceed ERP Stands Out</h3>
-                <ul class="list-style-one">
-                  <li>
-                    <strong>Real-time data:</strong> Monitor inventory, sales,
-                    and finances across all locations
-                  </li>
-                  <li>
-                    <strong>Multi-language support:</strong> Croatian,
-                    English, Slovenian, Serbian
-                  </li>
-                  <li>
-                    <strong>Seamless integrations:</strong> Webshops,
-                    production lines, courier services, and more
-                  </li>
-                  <li>
-                    <strong>Custom reporting:</strong> Generate OLAP reports
-                    from a single database
-                  </li>
-                </ul>
-
-                <h3>Key Modules & Capabilities</h3>
-
-                <h4>Retail Solutions</h4>
-                <ul class="list-style-one">
-                  <li>
-                    Real-time POS tracking across all locations and shifts
-                  </li>
-                  <li>Automated branch replenishment and stock monitoring</li>
-                  <li>Integrated loyalty programs and promotional systems</li>
-                  <li>Full fiscal compliance for Balkan region countries</li>
-                </ul>
-
-                <h4>Wholesale Management</h4>
-                <ul class="list-style-one">
-                  <li>End-to-end order tracking from request to delivery</li>
-                  <li>Multi-level partner pricing and rebate controls</li>
-                  <li>Procurement planning based on sales forecasts</li>
-                  <li>eInvoicing and traffic analysis tools</li>
-                </ul>
-
-                <h4>Warehouse (WMS) & Logistics</h4>
-                <ul class="list-style-one">
-                  <li>Optimized picking routes and positional warehousing</li>
-                  <li>LOT/SKU tracking with FEFO expiration management</li>
-                  <li>Courier service integrations with package tracking</li>
-                  <li>Real-time warehouse dashboards</li>
-                </ul>
-
-                <h4>Production & Service</h4>
-                <ul class="list-style-one">
-                  <li>Production order monitoring with cost calculation</li>
-                  <li>Service order lifecycle management</li>
-                  <li>Preventive maintenance scheduling</li>
-                  <li>Equipment history tracking</li>
-                </ul>
-
-                <h4>Accounting & HR</h4>
-                <ul class="list-style-one">
-                  <li>Automated bank statement processing</li>
-                  <li>Multi-currency and interest calculations</li>
-                  <li>
-                    Payroll for all worker types (regular, contractors, etc.)
-                  </li>
-                  <li>Continuous legal compliance updates</li>
-                </ul>
-
-                <div class="implementation-box">
-                  <h3>Implementation Process</h3>
-                  <p>
-                    We guide you through every step with department-specific
-                    training to ensure maximum ROI. Our specialists analyze
-                    your workflows to customize Luceed for your exact needs.
-                  </p>
-                </div>
-
-                <div class="text-start mt-40">
-                  <a href="#contact" class="btn btn-primary mr-3">Request Quote</a>
-                  <a href="odoo-solution.html" class="btn btn-secondary">Explore Odoo Alternative</a>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- service-details-area-end -->
-  </main>
-  <!-- main-area-end -->
-  <!-- footer -->
-  <footer class="footer-bg footer-p p-relative">
-    <div class="footer-top pt-120 pb-90">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="footer-widget mb-30">
-              <div class="f-widget-title">
-                <h2><img src="assets/e-sustavi-logo 1.png" alt="img" /></h2>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 col-lg-2 col-sm-6">
-            <div class="footer-widget mb-30">
-              <div class="footer-link f-product">
-                <div class="f-widget-title">
-                  <h2>Product</h2>
-                </div>
-                <ul>
-                  <li><a href="index.html">Documentation</a></li>
-                  <li><a href="index.html">Changelog</a></li>
-                  <li><a href="index.html">Pricing</a></li>
-                  <li><a href="index.html">Parsers</a></li>
-                  <li>
-                    <a href="index.html">SDTF <span>New</span></a>
-                  </li>
-                  <li><a href="index.html">Use cases</a></li>
-                  <li><a href="index.html">Launch weak</a></li>
-                  <li><a href="index.html">Feedback</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-7 col-lg-7 col-sm-12">
-            <div class="row">
-              <div class="col-xl-4 col-lg-4 col-sm-6">
-                <div class="footer-widget mb-30">
-                  <div class="f-widget-title">
-                    <h2>Resources</h2>
-                  </div>
-                  <div class="footer-link">
-                    <ul>
-                      <li><a href="index.html">Guide</a></li>
-                      <li><a href="index.html">Blog</a></li>
-                      <li><a href="index.html">Customers</a></li>
-                      <li><a href="index.html">Help center</a></li>
-                    </ul>
+            <div class="col-xl-7 col-lg-7 col-sm-12">
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-sm-6">
+                  <div class="footer-widget mb-30">
+                    <div class="f-widget-title">
+                      <h2>Resources</h2>
+                    </div>
+                    <div class="footer-link">
+                      <ul>
+                        <li><a href="index.html">Guide</a></li>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="index.html">Customers</a></li>
+                        <li><a href="index.html">Help center</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-sm-6">
-                <div class="footer-widget mb-30">
-                  <div class="f-widget-title">
-                    <h2>Company</h2>
-                  </div>
-                  <div class="footer-link">
-                    <ul>
-                      <li><a href="index.html">Press kit</a></li>
-                      <li><a href="index.html">Climate</a></li>
-                      <li><a href="index.html">Jobs</a></li>
-                      <li><a href="index.html">Contact us</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-sm-6">
-                <div class="footer-widget mb-30">
-                  <div class="f-widget-title">
-                    <h2>Community</h2>
-                  </div>
-                  <div class="footer-link">
-                    <ul>
-                      <li><a href="index.html">Discord</a></li>
-                      <li><a href="index.html">Facebook</a></li>
-                      <li><a href="index.html">Twitter</a></li>
-                      <li><a href="index.html">Youtube</a></li>
-                    </ul>
+                <div class="col-xl-4 col-lg-4 col-sm-6">
+                  <div class="footer-widget mb-30">
+                    <div class="f-widget-title">
+                      <h2>Company</h2>
+                    </div>
+                    <div class="footer-link">
+                      <ul>
+                        <li><a href="index.html">Press kit</a></li>
+                        <li><a href="index.html">Climate</a></li>
+                        <li><a href="index.html">Jobs</a></li>
+                        <li><a href="index.html">Contact us</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-xl-12 col-lg-12 col-sm-6">
-                <div class="footer-widget mb-30">
-                  <div class="footer-banner">
-                    <img src="img/bg/footer-banner.png" alt="img" />
+                <div class="col-xl-4 col-lg-4 col-sm-6">
+                  <div class="footer-widget mb-30">
+                    <div class="f-widget-title">
+                      <h2>Community</h2>
+                    </div>
+                    <div class="footer-link">
+                      <ul>
+                        <li><a href="index.html">Discord</a></li>
+                        <li><a href="index.html">Facebook</a></li>
+                        <li><a href="index.html">Twitter</a></li>
+                        <li><a href="index.html">Youtube</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-sm-6">
+                  <div class="footer-widget mb-30">
+                    <div class="footer-banner">
+                      <img src="img/bg/footer-banner.png" alt="img" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -637,49 +694,47 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="copyright-wrap">
-      <div class="container">
-        <div class="row align-items-center c-mid">
-          <div class="col-lg-6 col-md-6">
-            <ul>
-              <li><a href="#">Privacy policy</a></li>
-              <li><a href="#">Terms of use</a></li>
-              <li><a href="#">Security</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-6 col-md-12 text-right text-xl-right">
-            <div class="copy-text">
-              @2024 Epizik. Design & development right reserved.
+      <div class="copyright-wrap">
+        <div class="container">
+          <div class="row align-items-center c-mid">
+            <div class="col-lg-6 col-md-6">
+              <ul>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Security</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-12 text-right text-xl-right">
+              <div class="copy-text">
+                @2024 Epizik. Design & development right reserved.
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- footer-end -->
-  <!-- JS here -->
-  <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-  <script src="js/vendor/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/ajax-form.js"></script>
-  <script src="js/paroller.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/js_isotope.pkgd.min.js"></script>
-  <script src="js/imagesloaded.min.js"></script>
-  <script src="js/parallax.min.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.counterup.min.js"></script>
-  <script src="js/jquery.scrollUp.min.js"></script>
-  <script src="js/jquery.meanmenu.min.js"></script>
-  <script src="js/parallax-scroll.js"></script>
-  <script src="js/swiper.min.js"></script>
+    </footer>
+    <!-- footer-end -->
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/paroller.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/js_isotope.pkgd.min.js"></script>
+    <script src="js/imagesloaded.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/parallax-scroll.js"></script>
+    <script src="js/swiper.min.js"></script>
 
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/element-in-view.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/element-in-view.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
