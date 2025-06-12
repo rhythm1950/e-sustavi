@@ -39,7 +39,279 @@
   .global-font {
     font-family: 'Lato', sans-serif;
   }
+  /* Mobile Menu Styles */
+@media (max-width: 991.98px) {
+  /* Mobile Menu Toggle Button */
+  .mobile-menu-toggle {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  /* Mobile Menu Container */
+  .mobile-menu-container {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: all 0.4s ease;
+    overflow-y: auto;
+  }
+  
+  .mobile-menu-container.active {
+    right: 0;
+  }
+  
+  /* Mobile Menu Header */
+  .mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .mobile-menu-header .logo img {
+    max-height: 40px;
+  }
+  
+  .mobile-menu-close {
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  /* Mobile Menu Navigation */
+  .mobile-menu {
+    padding: 20px;
+  }
+  
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mobile-menu > ul > li {
+    position: relative;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .mobile-menu > ul > li:last-child {
+    border-bottom: none;
+  }
+  
+  .mobile-menu > ul > li > a {
+    display: block;
+    padding: 12px 0;
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  /* Dropdown Toggle */
+  .dropdown-toggle {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  /* Submenu */
+  .sub-menu {
+    display: none;
+    padding-left: 15px;
+  }
+  
+  .sub-menu li a {
+    display: block;
+    padding: 10px 0;
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .menu-item.active .sub-menu {
+    display: block;
+  }
+  
+  .menu-item.active .dropdown-toggle i {
+    transform: rotate(180deg);
+  }
+  
+  /* Mobile Menu Buttons */
+  .mobile-menu-buttons {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .mobile-support-btn,
+  .mobile-chat-btn {
+    display: block;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .mobile-support-btn {
+    background: #f5f5f5;
+    color: #333;
+  }
+  
+  .mobile-chat-btn {
+    background: #B13BA3;
+    color: white;
+  }
+  
+  /* Mobile Menu Footer */
+  .mobile-menu-footer {
+    padding: 20px;
+    background: #f9f9f9;
+    margin-top: auto;
+  }
+  
+  .mobile-menu-footer .header-social {
+    margin-bottom: 20px;
+  }
+  
+  .mobile-menu-footer .header-social a {
+    margin-right: 15px;
+    color: #333;
+    font-size: 18px;
+  }
+  
+  .mobile-menu-footer .call-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .mobile-menu-footer .call-box .icon {
+    margin-right: 10px;
+    color: #B13BA3;
+  }
+  
+  .mobile-menu-footer .call-box .text a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  /* Overlay */
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+  }
+  
+  .mobile-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Prevent scrolling when menu is open */
+  body.mobile-menu-open {
+    overflow: hidden;
+  }
+}
+/*hiding mobile menu particulars item in main big screen*/
+/* Hide mobile menu on large screens */
+@media (min-width: 992px) {
+  /* Mobile Menu Toggle */
+  .mobile-menu-toggle {
+    display: none;
+  }
+
+  /* Mobile Menu Container */
+  .mobile-menu-container {
+    display: none;
+  }
+
+  /* Mobile Menu Overlay */
+  .mobile-menu-overlay {
+    display: none;
+  }
+
+  /* Mobile-specific content */
+  .mobile-menu-wrapper {
+    display: none;
+  }
+}
+
+
 </style>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  // Mobile Menu Toggle
+  const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+  const mobileMenuContainer = document.getElementById('mobile-menu-container');
+  const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+  const mobileMenuClose = document.getElementById('mobile-menu-close');
+  
+  // Toggle mobile menu
+  function toggleMobileMenu() {
+    mobileMenuContainer.classList.toggle('active');
+    mobileMenuOverlay.classList.toggle('active');
+    document.body.classList.toggle('mobile-menu-open');
+  }
+  
+  mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+  mobileMenuClose.addEventListener('click', toggleMobileMenu);
+  mobileMenuOverlay.addEventListener('click', toggleMobileMenu);
+  
+  // Handle dropdown menus
+  const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+  
+  dropdownToggles.forEach(function(toggle) {
+    toggle.addEventListener('click', function() {
+      const menuItem = this.parentElement;
+      menuItem.classList.toggle('active');
+      
+      const subMenu = menuItem.querySelector('.sub-menu');
+      if (subMenu.style.display === 'block') {
+        subMenu.style.display = 'none';
+      } else {
+        subMenu.style.display = 'block';
+      }
+    });
+  });
+  
+  // Close mobile menu when clicking on a link
+  const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+  mobileMenuLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      if (!this.parentElement.classList.contains('menu-item') || !this.nextElementSibling) {
+        toggleMobileMenu();
+      }
+    });
+  });
+});
+</script>
 
 <body class="global-font">
   <!--  Preloader  -->
@@ -49,43 +321,116 @@
   <!--  Preloader end  -->
 
   <header class="header-area header">
-    <div class="header-top second-header d-none d-md-block">
-      <div class="container-fluid pl-80 pr-80">
-        <div class="row align-items-center">
-          <div class="col-lg-4 col-md-3 d-none d-md-block">
-            <div class="header-social">
-              <span>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-              </span>
-              <!--  /social media icon redux -->
+  <!-- Top Bar (Visible on desktop only) -->
+  <div class="header-top second-header d-none d-md-block">
+    <div class="container-fluid pl-80 pr-80">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-md-3 d-none d-md-block">
+          <div class="header-social">
+            <span>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-9 d-none d-md-block text-right">
+          <div class="header-cta">
+            <ul>
+              <li>
+                <div class="call-box">
+                  <div class="icon">
+                    <i class="fa-regular fa-phone"></i>
+                  </div>
+                  <div class="text">
+                    <strong><a href="tel:+38513667221">+385 1 3667 221</a></strong>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="call-box">
+                  <div class="icon">
+                    <i class="fa-regular fa-envelope"></i>
+                  </div>
+                  <div class="text">
+                    <strong><a href="mailto:info@e-sustavi.hr">info@e-sustavi.hr</a></strong>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <div id="header-sticky" class="menu-area w-100">
+    <div class="container-fluid">
+      <div class="second-menu" id="menu-bar">
+        <div class="d-flex row justify-content-between align-items-center">
+          <!-- Logo -->
+          <div class="col-xl-2 col-lg-2 col-6">
+            <div class="logo p-3 d-flex align-items-center">
+              <a href="index.html"><img src="./assets/e-sustavi-logo 1.png" alt="logo" /></a>
             </div>
           </div>
-          <div class="col-lg-8 col-md-9 d-none d-md-block text-right">
-            <div class="header-cta">
-              <ul>
+
+          <!-- Mobile Menu Toggle -->
+          <div class="col-6 d-lg-none text-right">
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+
+          <!-- Desktop Menu (Hidden on mobile) -->
+          <div class="col-xl-6 col-lg-6 d-none d-lg-block">
+            <div class="main-menu">
+              <nav id="desktop-menu">
+                <ul>
+                  <li class="has-sub">
+                    <a href="index.html">Home</a>
+                    <ul>
+                      <li><a href="home2.html">Home-2</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="news.html">News</a></li>
+                  <li class="has-sub">
+                    <a href="solutions.html">Solutions</a>
+                    <ul>
+                      <li><a href="solution-1.html">Solution 1</a></li>
+                      <li><a href="solution-2.html">Solution 2</a></li>
+                      <li><a href="solution-3.html">Solution 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-sub">
+                    <a href="services.html">Services</a>
+                    <ul>
+                      <li><a href="service-1.html">Service 1</a></li>
+                      <li><a href="service-2.html">Service 2</a></li>
+                      <li><a href="service-3.html">Service 3</a></li>
+                      <li><a href="service-4.html">Service 4</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="reference.html">Reference</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <!-- Desktop Buttons (Hidden on mobile) -->
+          <div class="col-xl-3 col-lg-4 text-right d-none d-lg-block mt-2 mb-2">
+            <div class="login">
+              <ul class="navbar-btns">
                 <li>
-                  <div class="call-box">
-                    <div class="icon">
-                      <i class="fa-regular fa-phone"></i>
-                    </div>
-                    <div class="text">
-                      <strong><a href="tel:+917052101786">+385 1 3667 221</a></strong>
-                    </div>
-                  </div>
+                  <a href="support.html" class="support-btn"><i class="fa-regular fa-angle-right"></i> Support</a>
                 </li>
                 <li>
-                  <div class="call-box">
-                    <div class="icon">
-                      <i class="fa-regular fa-envelope"></i>
-                    </div>
-                    <div class="text">
-                      <strong><a href="mailto:info@example.com">info@e-sustavi.hr</a></strong>
-                    </div>
-                  </div>
+                  <a href="contact.html" class="chat-btn"><i class="fa-regular fa-angle-right"></i> Let's Talk</a>
                 </li>
               </ul>
             </div>
@@ -93,74 +438,99 @@
         </div>
       </div>
     </div>
-    <div id="header-sticky" class="menu-area w-100">
-      <div class="container-fluid">
-        <div class="second-menu" id="menu-bar">
-          <div class="d-flex row justify-content-evenly align-items-center">
-            <!-- logo -->
+  </div>
 
-            <div class="col-xl-2 col-lg-2 d-flex justify-content-center align-items-center">
-              <div class="logo p-3 d-flex align-items-center justify-content-center">
-                <a href="index.html"><img src="./assets/e-sustavi-logo 1.png" alt="logo" /></a>
-              </div>
-            </div>
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
 
-            <!-- menu -->
-            <div class="col-xl-6 col-lg-6 responsive-m">
-              <div class="main-menu align-items-center d-flex justify-content-center">
-                <nav id="mobile-menu flex-wrap m-auto">
-                  <ul class="">
-                    <li class="has-sub">
-                      <a href="index.html">Home</a>
-                      <ul>
-                        <li><a href="home2.html">Home-2</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li class="has-sub">
-                      <a href="solutions.html">Solutions</a>
-                      <ul>
-                        <li><a href="solution-1.html">Solution 1</a></li>
-                        <li><a href="solution-2.html">Solution 2</a></li>
-                        <li><a href="solution-3.html">Solution 3</a></li>
-                      </ul>
-                    </li>
-                    <li class="has-sub">
-                      <a href="services.html">Services</a>
-                      <ul>
-                        <li><a href="service-1.html">Service 1</a></li>
-                        <li><a href="service-2.html">Service 2</a></li>
-                        <li><a href="service-3.html">Service 3</a></li>
-                        <li><a href="service-4.html">Service 4</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="reference.html">Reference</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                  </ul>
-                </nav>
+  <!-- Mobile Menu Content -->
+  <div class="mobile-menu-container" id="mobile-menu-container">
+    <div class="mobile-menu-wrapper">
+      <div class="mobile-menu-header">
+        <div class="logo">
+          <a href="index.html"><img src="./assets/e-sustavi-logo 1.png" alt="logo" /></a>
+        </div>
+        <button class="mobile-menu-close" id="mobile-menu-close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <nav class="mobile-menu">
+        <ul>
+          <li class="menu-item">
+            <a href="index.html">Home</a>
+            <ul class="sub-menu">
+              <li><a href="home2.html">Home-2</a></li>
+            </ul>
+            <span class="dropdown-toggle"><i class="fas fa-chevron-down"></i></span>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="news.html">News</a></li>
+          <li class="menu-item">
+            <a href="solutions.html">Solutions</a>
+            <ul class="sub-menu">
+              <li><a href="solution-1.html">Solution 1</a></li>
+              <li><a href="solution-2.html">Solution 2</a></li>
+              <li><a href="solution-3.html">Solution 3</a></li>
+            </ul>
+            <span class="dropdown-toggle"><i class="fas fa-chevron-down"></i></span>
+          </li>
+          <li class="menu-item">
+            <a href="services.html">Services</a>
+            <ul class="sub-menu">
+              <li><a href="service-1.html">Service 1</a></li>
+              <li><a href="service-2.html">Service 2</a></li>
+              <li><a href="service-3.html">Service 3</a></li>
+              <li><a href="service-4.html">Service 4</a></li>
+            </ul>
+            <span class="dropdown-toggle"><i class="fas fa-chevron-down"></i></span>
+          </li>
+          <li><a href="reference.html">Reference</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu-buttons">
+        <a href="support.html" class="mobile-support-btn"><i class="fa-regular fa-angle-right"></i> Support</a>
+        <a href="contact.html" class="mobile-chat-btn"><i class="fa-regular fa-angle-right"></i> Let's Talk</a>
+      </div>
+
+      <div class="mobile-menu-footer">
+        <div class="header-social">
+          <span>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </span>
+        </div>
+        <div class="header-cta" style="margin-top: 35px;">
+          <ul>
+            <li>
+              <div class="call-box">
+                <i class="fa-regular fa-phone"></i>
+                <div class="text">
+                  <strong><a href="tel:+38513667221">+385 1 3667 221</a></strong>
+                </div>
               </div>
-            </div>
-            <!-- buttons -->
-            <div class="col-xl-3 col-lg-4 text-right d-lg-block mt-2 mb-2">
-              <div class="login d-flex justify-content-center">
-                <ul class="navbar-btns">
-                  <li>
-                    <a href="support.html" class="support-btn "><i class="fa-regular fa-angle-right"></i> Support
-                    </a>
-                  </li>
-                  <li>
-                    <a href="contact.html" class="chat-btn"><i class="fa-regular fa-angle-right"></i> Let’s Talk</a>
-                  </li>
-                </ul>
+            </li>
+            <li>
+              <div class="call-box">
+                
+                  <i class="fa-regular fa-envelope"></i>
+                
+                <div class="text">
+                  <strong><a href="mailto:info@e-sustavi.hr">info@e-sustavi.hr</a></strong>
+                </div>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    </div>
-  </header>
+  </div>
+</header>
 
   <!-- header end -->
 
