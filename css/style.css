@@ -57,6 +57,61 @@ body {
   z-index: 9999;
 }
 
+
+
+
+/* navbar button specially */
+
+.navbar-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2px;
+}
+
+.navbar-btns .support-btn {
+  border: 1px solid var(--bg-button);
+  padding: 10px 18px;
+  border-radius: 16px;
+  transition: all;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar-btns .support-btn:hover {
+  background-color: var(--bg-purple);
+  color: white;
+
+}
+
+
+.navbar-btns .chat-btn {
+  /* border: 1px solid var(--bg-button); */
+  background-color: var(--bg-purple);
+  padding: 10px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+  transition: all;
+  font-weight: 600;
+  display: flex;
+  gap: 2px;
+  color: white;
+
+}
+
+.navbar-btns .chat-btn:hover {
+  background: white;
+  color: black;
+  border: 1px solid var(--bg-purple);
+
+}
+
+/* navbar  btn css  */
+
 .badge {
   position: absolute;
   bottom: -75px;
@@ -5198,7 +5253,7 @@ section:hover .section-title h2::before {
   height: 50%;
   width: 100%;
   left: 0;
-  background: #942e79 ;
+  background: #942e79;
   top: 0;
   position: absolute;
   z-index: -1;
@@ -8183,7 +8238,7 @@ section:hover .section-title h2::before {
   top: 0;
   width: 100%;
   height: 80%;
-  
+
   z-index: 0;
 }
 
@@ -8607,7 +8662,7 @@ section:hover .section-title h2::before {
 .f-cta-area.gray-bg {
   background: #f4f4fe;
   border-top: 3px solid #A3498B;
- 
+
 }
 
 .footer-text p {
@@ -15573,13 +15628,16 @@ blockquote cite {
   top: 0;
   font-size: 38px;
 }
+
 .brand-logo-ul img {
-    width: 264px;
-    height: 120px;
-    object-fit: contain; /* This ensures the aspect ratio is preserved */
+  width: 264px;
+  height: 120px;
+  object-fit: contain;
+  /* This ensures the aspect ratio is preserved */
 }
+
 .integration-logo-ul img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
