@@ -30,70 +30,221 @@
             </div>
             <!--  Preloader end  -->
          
-         <!-- header -->
-        <header class="header-area header-three">            
-			  <div id="header-sticky" class="menu-area">
-                <div class="container">
-                    <div class="second-menu">
-                        <div class="row align-items-center">
-                        <div class="col-lg-2 col-md-12">
-                            <div class="logo">
-                                <a href="index.html"><img src="img/logo/logo.png" alt="logo"></a>
-                            </div>
+            <header class="header-area header">
+                <!-- Top Bar (Visible on desktop only) -->
+                <div class="header-top second-header d-none d-md-block">
+                  <div class="container-fluid pl-80 pr-80">
+                    <div class="row align-items-center">
+                      <div class="col-lg-4 col-md-3 d-none d-md-block">
+                        <div class="header-social">
+                          <span>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                          </span>
                         </div>
-                           <div class="col-xl-6 col-lg-6">
-                              
-                                <div class="main-menu">
-                                    <nav id="mobile-menu">
-                                        <ul>
-                                           <li class="has-sub">
-												<a href="index.html">Home</a>
-												<ul>
-                                                    <li><a href="index.html">App Landing</a></li>
-                                                    <li><a href="index-2.html">Sass / Software</a></li>
-                                                    <li><a href="index-3.html">IT Solutions</a></li>
-												</ul>
-											</li>          
-                                              <li><a href="about.html">How it works</a></li>
-                                            <li><a href="blog.html">Blog</a></li>
-                                            
-                                            <li class="has-sub"><a href="#">Pages</a>
-												<ul>
-                                                   <li><a href="services.html">Services</a></li>
-                                                     <li><a href="projects.html">Case Study</a></li>
-                                                    <li><a href="pricing.html">Pricing</a></li>
-                                                    <li><a href="team.html">Team</a></li>                                                    
-                                                    <li><a href="faq.html">Faq</a></li>                                                   
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                                    <li><a href="shop.html">Shop</a></li>
-                                                    <li><a href="shop-details.html">Shop Details</a></li>
-                                                </ul>
-											</li>
-                                            <li><a href="contact.html">Contact Us</a></li>                                            
-                                        </ul>
-                                    </nav>
+                      </div>
+                      <div class="col-lg-8 col-md-9 d-none d-md-block text-right">
+                        <div class="header-cta">
+                          <ul>
+                            <li>
+                              <div class="call-box">
+                                <div class="icon">
+                                  <i class="fa-regular fa-phone"></i>
                                 </div>
-                            </div>   
-                             <div class="col-xl-4 col-lg-4 text-right d-none d-lg-block">
-                                 <div class="login2">
-                                    <ul>
-                                        <li><a href="#">Contact sales</a></li>
-                                        <li><a href="#">Log in</a></li>
-                                        <li>
-                                           <a href="contact.html" class="btn active"><i class="fa-regular fa-angle-right"></i> Sign up</a>
-                                        </li>
-                                    </ul>
-                                </div>                               
-                            </div>
-                            <div class="col-12">
-                                <div class="mobile-menu"></div>
-                            </div>
+                                <div class="text">
+                                  <strong><a href="tel:+38513667221">+385 1 3667 221</a></strong>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="call-box">
+                                <div class="icon">
+                                  <i class="fa-regular fa-envelope"></i>
+                                </div>
+                                <div class="text">
+                                  <strong><a href="mailto:info@e-sustavi.hr">info@e-sustavi.hr</a></strong>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </header>
-        <!-- header-end -->
+              
+                <!-- Main Navigation -->
+                <div id="header-sticky" class="menu-area w-100">
+                  <div class="container-fluid">
+                    <div class="second-menu" id="menu-bar">
+                      <div class="d-flex row justify-content-between align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-6">
+                          <div class="logo p-3 d-flex align-items-center">
+                            <a href="index.html"><img src="./assets/e-sustavi-logo 1.png" alt="logo" /></a>
+                          </div>
+                        </div>
+              
+                        <!-- Mobile Menu Toggle -->
+                        <div class="col-6 d-lg-none text-right">
+                          <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                            <i class="fas fa-bars"></i>
+                          </button>
+                        </div>
+              
+                        <!-- Desktop Menu (Hidden on mobile) -->
+                        <div class="col-xl-6 col-lg-6 d-none d-lg-block">
+                          <div class="main-menu">
+                            <nav id="desktop-menu">
+                              <ul>
+                                <li class="has-sub">
+                                  <a href="index.html">Home</a>
+                                  <ul>
+                                    <li><a href="home2.html">Home-2</a></li>
+                                  </ul>
+                                </li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="news.html">News</a></li>
+                                <li class="has-sub">
+                                  <a href="solutions.html">Solutions</a>
+                                  <ul>
+                                    <li><a href="solution-1.html">Solution 1</a></li>
+                                    <li><a href="solution-2.html">Solution 2</a></li>
+                                    <li><a href="solution-3.html">Solution 3</a></li>
+                                  </ul>
+                                </li>
+                                <li class="has-sub">
+                                  <a href="services.html">Services</a>
+                                  <ul>
+                                    <li><a href="service-1.html">Service 1</a></li>
+                                    <li><a href="service-2.html">Service 2</a></li>
+                                    <li><a href="service-3.html">Service 3</a></li>
+                                    <li><a href="service-4.html">Service 4</a></li>
+                                  </ul>
+                                </li>
+                                <li><a href="reference.html">Reference</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+              
+                        <!-- Desktop Buttons (Hidden on mobile) -->
+                        <div class="col-xl-3 col-lg-4 text-right d-none d-lg-block mt-2 mb-2">
+                          <div class="login">
+                            <ul class="navbar-btns">
+                              <li>
+                                <a href="support.html" class="support-btn"><i class="fa-regular fa-angle-right"></i> Support</a>
+                              </li>
+                              <li>
+                                <a href="contact.html" class="chat-btn"><i class="fa-regular fa-angle-right"></i> Let's Talk</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Mobile Menu Overlay -->
+                <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+              
+                <!-- Mobile Menu Content -->
+                <div class="mobile-menu-container" id="mobile-menu-container">
+                  <div class="mobile-menu-wrapper">
+                    <div class="mobile-menu-header">
+                      <div class="logo">
+                        <a href="index.html"><img src="./assets/e-sustavi-logo 1.png" alt="logo" /></a>
+                      </div>
+                      <button class="mobile-menu-close" id="mobile-menu-close">
+                        <i class="fas fa-times"></i>
+                      </button>
+                    </div>
+              
+                    <nav class="mobile-menu">
+                      <ul>
+                        <li class="menu-item">
+                          <a href="index.html">Home</a>
+                          <ul class="sub-menu">
+                            <li><a href="home2.html">Home-2</a></li>
+                          </ul>
+                          <span class="dropdown-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li class="menu-item">
+                          <a href="solutions.html">Solutions</a>
+                          <ul class="sub-menu">
+                            <li><a href="solution-1.html">Solution 1</a></li>
+                            <li><a href="solution-2.html">Solution 2</a></li>
+                            <li><a href="solution-3.html">Solution 3</a></li>
+                          </ul>
+                          <span class="dropdown-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </li>
+                        <li class="menu-item">
+                          <a href="services.html">Services</a>
+                          <ul class="sub-menu">
+                            <li><a href="service-1.html">Service 1</a></li>
+                            <li><a href="service-2.html">Service 2</a></li>
+                            <li><a href="service-3.html">Service 3</a></li>
+                            <li><a href="service-4.html">Service 4</a></li>
+                          </ul>
+                          <span class="dropdown-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </li>
+                        <li><a href="reference.html">Reference</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                    </nav>
+              
+                    <div class="mobile-menu-buttons">
+                      <a href="support.html" class="mobile-support-btn"><i class="fa-regular fa-angle-right"></i> Support</a>
+                      <a href="contact.html" class="mobile-chat-btn"><i class="fa-regular fa-angle-right"></i> Let's Talk</a>
+                    </div>
+              
+                    <div class="mobile-menu-footer">
+                      <div class="header-social">
+                        <span>
+                          <a href="#"><i class="fab fa-facebook-f"></i></a>
+                          <a href="#"><i class="fab fa-instagram"></i></a>
+                          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                          <a href="#"><i class="fab fa-youtube"></i></a>
+                          <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </span>
+                      </div>
+                      <div class="header-cta" style="margin-top: 35px;">
+                        <ul>
+                          <li>
+                            <div class="call-box">
+                              <i class="fa-regular fa-phone"></i>
+                              <div class="text">
+                                <strong><a href="tel:+38513667221">+385 1 3667 221</a></strong>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="call-box">
+                              
+                                <i class="fa-regular fa-envelope"></i>
+                              
+                              <div class="text">
+                                <strong><a href="mailto:info@e-sustavi.hr">info@e-sustavi.hr</a></strong>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </header>
+              
+                <!-- header end -->
+              
+                <!-- header end -->
          <!-- offcanvas-area -->
                 <div class="offcanvas-menu">
                 <span class="menu-close"><i class="fas fa-times"></i></span>
