@@ -10326,7 +10326,7 @@ iframe {
 .footer-widget table {
   width: 100%;
   padding: 10px;
-  background: #f5f5f5;
+  /* background: #f5f5f5; */
 }
 
 .footer-widget th {
